@@ -12,7 +12,9 @@ from nose.tools import assert_equal
 import simplemodule
 
 class TestHelloWorld(unittest.TestCase):
-    def test_simple(self):
+    
+    
+    def test_simple(self):  #these tests usually have just self as argument
         assert_equal(4, 2+2)
         
 #    def test_fail(self):
@@ -20,3 +22,8 @@ class TestHelloWorld(unittest.TestCase):
      
     def test_summer(self):
         assert_equal(8, simplemodule.int_sum(5, 3)) #define an object of the class you want to test
+        
+    def test_class(self):
+         linus = simplemodule.prova()
+         assert_equal(6, linus.Multiply_2factors(4,2))
+        
